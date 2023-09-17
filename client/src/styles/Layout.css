@@ -1,0 +1,112 @@
+.sidebar {
+    height: 100vh !important;
+    /* border-radius: 5px; */
+    background-color: #2e3200;
+    box-shadow: 0 0 2px gray;
+    color: white;
+  }
+  
+  .menu {
+    padding-top: 100px;
+  }
+  
+  .menu-item {
+    padding-top: 30px;
+  }
+  
+  .menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .menu-item i {
+    font-size: 1.2rem;
+    margin: 0 15px;
+    color: white;
+  }
+  
+  .active {
+    background-color: white;
+    padding: 10px;
+    margin-top: 25px;
+  }
+  
+  .active a,
+  .active i {
+    color: #2e3200;
+  }
+
+  /* Apply hover effect to cards */
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Style the table */
+.table-styled {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-styled th,
+.table-styled td {
+  padding: 10px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-styled th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.table-styled tbody tr:hover {
+  background-color: #f5f
+}
+
+/* styles.css */
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Admin welcome styles */
+.admin-welcome {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Admin name styles */
+.admin-name {
+  font-weight: bold;
+}
+
+/* Admin message styles */
+.admin-message p {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
