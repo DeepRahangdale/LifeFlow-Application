@@ -20,9 +20,9 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-      origin: [""],
-      methods: ["POST", "GET"],
-      credentials: true
+      origin: ["https://life-flow-app-mern-stack-frontend.vercel.app"],
+      //methods: ["POST", "GET"],
+      //credentials: true
   }
 ));
 app.use(morgan("dev"));
