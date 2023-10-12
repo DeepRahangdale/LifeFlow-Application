@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://lifeflow-app.onrender.com/api/v1/";
+const baseURL = "https://lifeflow-api.onrender.com/api/v1/";
 
 const API = axios.create({ baseURL });
 
