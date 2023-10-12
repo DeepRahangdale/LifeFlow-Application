@@ -11,16 +11,23 @@ const path = require('path');
 dotenv.config();
 
 //mongodb connection
-connectDB();
+connectDB('mongodb+srv://lifeflow:deep3136@bugtracker.rf4byge.mongodb.net/lifeflow');
 
 //rest object
 const app = express();
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+      origin: [""],
+      methods: ["POST", "GET"],
+      credentials: true
+  }
+));
 app.use(morgan("dev"));
 
+mongoose.connect('mongodb+srv://lifeflow:deep3136@bugtracker.rf4byge.mongodb.net/lifeflow');
 
 //routes
 //1 test route
@@ -31,12 +38,12 @@ app.use("/api/v1/analytics", require("./routes/analyticsRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
 
 //Static Folder
-app.use(express.static(path.join(__dirname, "./client/build")));
+//app.use(express.static(path.join(__dirname, "./client/build")));
 
 //Staic Routes
-app.get("*", function(req, res){
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-})
+//app.get("*", function(req, res){
+  //res.sendFile(path.join(__dirname, "./client/build/index.html"));
+//})
 
 
 
