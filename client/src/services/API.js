@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create('https://life-flow-app-mern-stack-server.vercel.app');
+const API = axios.create({ baseURL: process.env.REACT_APP_BASEURL });
 
 //call back function
 //Bearer Token A security token with the property that any party in possession of the token (a “bearer”) 
