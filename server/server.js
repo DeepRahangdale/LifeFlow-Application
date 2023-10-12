@@ -11,20 +11,14 @@ const path = require('path');
 dotenv.config();
 
 //mongodb connection
-connectDB('mongodb+srv://lifeflow:deep3136@bugtracker.rf4byge.mongodb.net/lifeflow');
+connectDB();
 
 //rest object
 const app = express();
 
 //middlewares
 app.use(express.json());
-app.use(cors(
-  {
-      origin: ["https://life-flow-app-mern-stack-frontend.vercel.app"],
-      //methods: ["POST", "GET"],
-      //credentials: true
-  }
-));
+app.use(cors());
 app.use(morgan("dev"));
 
  //mongoose.connect('mongodb+srv://lifeflow:deep3136@bugtracker.rf4byge.mongodb.net/lifeflow');
