@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
 
- //mongoose.connect('mongodb+srv://lifeflow:deep3136@bugtracker.rf4byge.mongodb.net/lifeflow');
+
 
 //routes
 //1 test route
